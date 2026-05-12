@@ -82,4 +82,6 @@ This project focuses on modeling and simulating a 3-DOF RRR robot manipulator, s
 
 This project provides a comprehensive framework for modeling, simulating, and controlling an RRR robot manipulator, with a focus on circular trajectory generation and execution.
 
+For more details on the theoretical background and implementation, refer to the [project report (PDF)](Docs/BE-GT2024-Equipe6.pdf).
+
 
