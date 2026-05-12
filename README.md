@@ -37,28 +37,46 @@ This project focuses on modeling and simulating a 3-DOF RRR robot manipulator, s
    - Clone the repository:  
      ```bash  
      git clone https://github.com/OlivierCrt/Trajectory_Generation_Robot_Manipulator_RX160  
+     cd Trajectory_Generation_Robot_Manipulator_RX160
+     ```  
+   - Create and activate a virtual environment:  
+     ```bash  
+     python3 -m venv venv  
+     source venv/bin/activate  
      ```  
    - Install dependencies:  
      ```bash  
      pip install -r required.txt  
      ```  
+   - Install the project in development mode:  
+     ```bash  
+     pip install -e .  
+     ```  
 
 ### 2. **Running the Project**  
    - Execute the main file to interact with the functionalities:  
      ```bash  
-     python Test/main.py  
+     python -m Tests.main  
      ```  
-   - If a module error occurs, try:  
-     ```bash  
-     python -m Tests.main.py  
-     ```  
-     or add the main directory to your environment variables.  
 
 ### 3. **Inputs and Units**  
    - **Linear Velocities:** mm/s  
    - **Angular Velocities:** rad/s  
    - **Joint Velocities:** rad/s  
    - **Distances:** mm  
+
+### 4. **Example Values**  
+   For the trajectory generation (menu option 2), use the following values as a starting point:  
+
+   | Parameter | Value |
+   |-----------|-------|
+   | V1 (initial velocity) | 500 mm/s |
+   | V2 (final velocity) | 3000 mm/s |
+   | K (acceleration) | 3000 mm/s² |
+   | Point A (x, y, z) | 1000, -100, 600 |
+   | Point B (x, y, z) | 1000, 200, 1200 |
+
+   > **Note:** Points A and B must share the same x coordinate since the trajectory is a circular arc in the YZ plane.
 
 ---
 
