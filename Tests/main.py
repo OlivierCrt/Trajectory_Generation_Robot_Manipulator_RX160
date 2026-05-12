@@ -15,6 +15,8 @@ def menu():
 if __name__ == "__main__":
     while True:
         choix = menu()
+        if choix == "0" :
+            break
         if choix == "1" :
             main_analyse()    
         if choix == "2" :
