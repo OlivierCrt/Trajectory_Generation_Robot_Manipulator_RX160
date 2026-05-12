@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
-from matrice_tn import *
-from const_v import *
-from modele_differentiel import *
+from .matrice_tn import *
+from .const_v import *
+from .modele_differentiel import *
 
 
 

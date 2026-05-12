@@ -1,4 +1,4 @@
-from main_analyse import main_analyse
+from .main_analyse import main_analyse
 from Tests.plotly3d import *
 
 
@@ -15,6 +15,8 @@ def menu():
 if __name__ == "__main__":
     while True:
         choix = menu()
+        if choix == "0" :
+            break
         if choix == "1" :
             main_analyse()    
         if choix == "2" :

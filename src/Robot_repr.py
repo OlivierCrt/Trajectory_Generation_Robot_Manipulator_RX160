@@ -1,5 +1,5 @@
 import plotly.graph_objects as go
-from const_v import *
+from .const_v import *
 
 
 """FONTION POUR MODELISER EN 3D LE BRAS ROBOT, LA FONCTION EST DECLARE A LA TOUTE FIN"""
